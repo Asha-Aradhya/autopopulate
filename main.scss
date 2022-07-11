@@ -39,21 +39,41 @@ h1 {
   font-size: 1.5rem;
 }
 
-// .input-field {
-// 	wit// background-color: chocolate;
-// }
-
+.input-field {
+  height: 30px;
+  width: 321px;
+  float: left;
+  border: none;
+  outline: none;
+}
+.field-container {
+  width: 350px;
+  border-radius: 5px;
+  border: 1px solid #736868;
+  padding: 1px;
+  display: table;
+}
+.results {
+  background: white;
+  width: 100%;
+  padding: 0px;
+  clear: both;
+  margin: 0;
+}
 .btn-search {
-  height: 29px;
+  height: 30px;
   width: 29px;
-  border-radius: 5px 5px 5px 5px;
-  margin-left: -9%;
+  background: white;
+  float: right;
+  border: none;
 }
 
 .btn-delete {
   height: 30px;
   width: 150px;
   background-color: rgb(255, 0, 0);
+  display: block; 
+  margin: 1rem auto
 }
 
 ul {
@@ -63,4 +83,23 @@ ul {
 li {
   text-transform: capitalize;
   padding: 3px 2px 3px 2px;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
 }
