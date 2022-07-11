@@ -27,39 +27,27 @@
 
       <div class="form-container">
         <form id="form">
-          <div style="width: 100%">
-            <input
-              class="input-field"
-              id="search"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              autocomplete="off"
-              style="border-top-left-radius: 5px; height: 30px; width: 22vw"
-            />
+          <div class="field-container">
+            <div>
+              <input
+                class="input-field"
+                id="search"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                autocomplete="off"
+              />
 
-            <button class="btn-search" type="submit" id="submit">
-              <i class="fa fa-search"></i>
-            </button>
-            <ul
-              id="results"
-              style="
-                background: white;
-                margin: 0px 0px 2px 1px;
-                width: 90.5%;
-                padding: 0px;
-              "
-            ></ul>
+              <button class="btn-search" type="submit" id="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+            <ul id="results" class="results"></ul>
           </div>
         </form>
       </div>
 
-      <button
-        type="button"
-        id="delete"
-        class="btn-delete"
-        style="display: block; margin: 1rem auto"
-      >
+      <button type="button" id="delete" class="btn-delete">
         Delete Searches
       </button>
 
