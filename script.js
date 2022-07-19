@@ -27,6 +27,15 @@ if (localStorage.recentSearches && localStorage.recentSearches != "") {
   recentSearches = []; //this will shows an empty array
 }
 
+//-------------Event listener for li---------
+document.querySelector('body').addEventListener('click', function(event) {
+  if (event.target.tagName.toLowerCase() === 'li') {
+    // do your action on your 'li' or whatever it is you're listening for
+    searchBar.value = event.target.innerHTML;
+    resultsHTML.style.display = "none";
+  }
+});
+
 //--------On typing text in the search bar
 
 searchBar.oninput = function () {
